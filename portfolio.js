@@ -1,3 +1,18 @@
+// Initialize Lenis
+const lenis = new Lenis({
+	duration: 1.4,
+	easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+	smooth: true,
+	smoothTouch: false,
+	touchMultiplier: 2,
+});
+
+function raf(time) {
+	lenis.raf(time);
+	requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
+
 // Dynamic year
 document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -13,10 +28,12 @@ const mobileMenu = document.getElementById('mobileMenu');
 const mobileClose = document.getElementById('mobileClose');
 
 function openMobile() {
+	lenis.stop(); // Pause Lenis
 	mobileMenu.classList.add('open');
 	document.body.style.overflow = 'hidden';
 }
 function closeMobile() {
+	lenis.start(); // Resume Lenis
 	mobileMenu.classList.remove('open');
 	document.body.style.overflow = '';
 }
@@ -59,13 +76,44 @@ const sectionObserver = new IntersectionObserver((entries) => {
 
 sections.forEach(s => sectionObserver.observe(s));
 
-// Smooth anchor scroll (for older browsers)
+// Smooth anchor scroll (Lenis Implementation)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 	anchor.addEventListener('click', function(e) {
-		const target = document.querySelector(this.getAttribute('href'));
-		if (target) {
+		const href = this.getAttribute('href');
+
+		// 1. Handle scroll to top (#)
+		if (href === '#') {
 			e.preventDefault();
-			target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			lenis.scrollTo(0, {
+				duration: 1.4,
+				easing: (t) => 1 - Math.pow(1 - t, 4)
+			});
+			return;
+		}
+
+		// 2. Handle specific targets (#id)
+		try {
+			const target = document.querySelector(href);
+			if (target) {
+				e.preventDefault();
+
+				// Close mobile menu if open
+				if (typeof closeMobile === 'function') {
+					closeMobile();
+				}
+
+				const headerHeight = 80;
+				const start = window.scrollY;
+				const elementPosition = target.getBoundingClientRect().top;
+				const offsetPosition = elementPosition + start - headerHeight;
+
+				lenis.scrollTo(offsetPosition, {
+					duration: 1.2,
+					easing: (t) => 1 - Math.pow(1 - t, 4)
+				});
+			}
+		} catch (err) {
+			console.warn('Invalid anchor link:', href);
 		}
 	});
 });
