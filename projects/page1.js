@@ -1,92 +1,95 @@
 const projects = [
-  {
-    id: 1,
-    title: "Interactive Weather Forecasting App",
-    desc: "Real-time dashboard with city search, live temperature, humidity, wind speed, and a 5-day forecast. Consumes the OpenWeatherMap API.",
-    tags: ["JavaScript", "OpenWeather API"],
-    badge: "Live",
-    year: 2024,
-    url: "#",
-    thumb: "t-weather",
-    image: "../assets/weather-app.png"
-  },
-  {
-    id: 2,
-    title: "Single Page Room Design App",
-    desc: "Editorial React SPA showcasing interior design concepts — smooth page transitions, component-driven architecture, and a refined visual language.",
-    tags: ["React", "Tailwind CSS"],
-    badge: null,
-    year: 2024,
-    url: "https://room-master-app.pxxl.click/",
-    thumb: "t-room",
-    image: "../assets/room-app.png"
-  },
-  {
-    id: 3,
-    title: "Full-Stack Form Website with Firebase",
-    desc: "Multi-step form with Firebase auth, real-time database writes, and client-side validation — full CRUD with an accessible, responsive UI.",
-    tags: ["JavaScript", "Firebase"],
-    badge: null,
-    year: 2023,
-    url: "https://multi-step-js-form.pxxl.click/",
-    thumb: "t-form",
-    image: "../assets/multi-step-form.png"
-  },
+  // {
+  //   id: 1,
+  //   title: "Interactive Weather Forecasting App",
+  //   desc: "Real-time dashboard with city search, live temperature, humidity, wind speed, and a 5-day forecast. Consumes the OpenWeatherMap API.",
+  //   tags: ["JavaScript", "OpenWeather API"],
+  //   badge: "Live",
+  //   year: 2024,
+  //   url: "#",
+  //   thumb: "t-weather",
+  //   image: "../assets/weather-app.png"
+  // },
+  // {
+  //   id: 2,
+  //   title: "Single Page Room Design App",
+  //   desc: "Editorial React SPA showcasing interior design concepts — smooth page transitions, component-driven architecture, and a refined visual language.",
+  //   tags: ["React", "Tailwind CSS"],
+  //   badge: null,
+  //   year: 2024,
+  //   url: "https://room-master-app.pxxl.click/",
+  //   thumb: "t-room",
+  //   image: "../assets/room-app.png"
+  // },
+  // {
+  //   id: 3,
+  //   title: "Full-Stack Form Website with Firebase",
+  //   desc: "Multi-step form with Firebase auth, real-time database writes, and client-side validation — full CRUD with an accessible, responsive UI.",
+  //   tags: ["JavaScript", "Firebase"],
+  //   badge: null,
+  //   year: 2023,
+  //   url: "https://multi-step-js-form.pxxl.click/",
+  //   thumb: "t-form",
+  //   image: "../assets/multi-step-form.png"
+  // },
   {
     id: 4,
-    title: "E-Commerce Product Storefront",
-    desc: "Full storefront with cart management, product filtering, real-time inventory, and checkout flow — powered by Supabase, styled with Tailwind.",
-    tags: ["React", "Supabase", "Tailwind CSS"],
+    title: "SmartIndex",
+    desc: "The economies masterpiece in build. Making Africa & economy better/more stable, and accessible to all.",
+    tags: ["JavaScript", "Tailwind CSS", "React"],
     badge: null,
-    year: 2024,
-    url: "#",
-    thumb: "t-ecomm",
-    image: "../assets/digital-bank.png"
+    year: 2023,
+    url: "https://smartindex.pxxl.click",
+    thumb: "t-css",
+    image: "../assets/smartindex.png"
   },
   {
     id: 5,
-    title: "React Analytics Dashboard",
-    desc: "Data-viz dashboard with chart components, filterable metric tables, and responsive layout — complex state management and component composition.",
-    tags: ["React", "JavaScript", "Tailwind CSS"],
+    title: "First portfolio",
+    desc: "This portfolio designed by me was built from scratch. Many react features were used, lenis scroll, typewriter effect etc",
+    tags: ["React", "Tailwind CSS", "Typescript"],
     badge: null,
-    year: 2024,
-    url: "#",
-    thumb: "t-dash",
-    image: "../assets/extensions-app.png"
-  },
-  {
-    id: 6,
-    title: "Full-Stack Blog Platform",
-    desc: "CMS with Supabase backend — rich-text posting, user auth, threaded comments, and a clean editorial reading experience built in React.",
-    tags: ["React", "Supabase", "Tailwind CSS"],
-    badge: null,
-    year: 2024,
-    url: "#",
-    thumb: "t-blog",
-    image: "../assets/digital-bank1.png"
-  },
-  {
-    id: 7,
-    title: "Personal Portfolio Website",
-    desc: "This portfolio — designed and built from scratch with no frameworks. Pure HTML, CSS, and vanilla JS with a custom design system and zero glow.",
-    tags: ["HTML5", "CSS3", "JavaScript"],
-    badge: "This site",
     year: 2025,
-    url: "#",
+    url: "https://victorusen.netlify.app/",
     thumb: "t-portfolio",
     image: "../assets/my-first-portfolio.png"
   },
   {
-    id: 8,
-    title: "CSS Component Library",
-    desc: "A self-built library of reusable UI components — buttons, cards, modals, and form elements styled with a consistent dark design token system.",
-    tags: ["HTML5", "CSS3"],
+    id: 6,
+    title: "async API fetching extensions app",
+    desc: "This project required fetching API and updating Inactive/active extensions status.",
+    tags: ["JavaScript"],
+    badge: "json API",
+    year: 2024,
+    url: "https://victusen.github.io/Digital-bank/",
+    thumb: "t-dash",
+    image: "../assets/extensions-app1.png"
+  },
+  {
+    id: 7,
+    title: "E-Banking app landing page",
+    desc: "E-banking app's full landing page, where users can find out and read more about features and services.",
+    tags: ["HTML", "CSS", "JavaScript"],
     badge: null,
-    year: 2023,
-    url: "#",
-    thumb: "t-css",
-    image: "../assets/smartindex.png"
-  }
+    year: 2024,
+    url: "https://victusen.github.io/Digital-bank/",
+    thumb: "t-ecomm",
+    image: "../assets/digital-bank.png"
+  },
+  
+  // {
+  //   id: 8,
+  //   title: "E-Banking app landing page",
+  //   desc: "The full landing page of an e-banking app, where users can find out and learn more about the app.",
+  //   tags: ["HTML", "CSS", "JavaScript"],
+  //   badge: null,
+  //   year: 2024,
+  //   url: "#",
+  //   thumb: "t-blog",
+  //   image: "../assets/digital-bank1.png"
+  // },
+  
+  
 ];
 
 function render() {
@@ -96,7 +99,7 @@ function render() {
   count.textContent = `${projects.length} `;
 
   grid.innerHTML = projects.map((p, i) => `
-    <a href="${p.url}" class="card" style="animation-delay:${i * 55}ms">
+    <a href="${p.url}" target="_blank" class="card" style="animation-delay:${i * 55}ms">
 
       <!-- Thumbnail -->
       <div class="card-thumb">

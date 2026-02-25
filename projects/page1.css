@@ -113,7 +113,8 @@ body::after {
   top: 0; z-index: 40;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* ← space-between as requested */
+  gap: 8px;
+  justify-content: space-between;
   padding: 1rem 2.5rem;
   border-bottom: 1px solid var(--border-subtle);
   background: rgba(8,10,10,0.9);
@@ -194,7 +195,7 @@ body::after {
 /* Thumbnail */
 .card-thumb {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 8;
   overflow: hidden;
   position: relative;
   border-bottom: 1px solid var(--border-subtle);
