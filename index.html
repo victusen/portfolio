@@ -7,14 +7,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="assets/pfp/vics-picture.png" type="image/x-icon">
 <link rel="stylesheet" href="portfolio.css">
 <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
 
-<!-- ============================================================
-  NAVIGATION
-============================================================ -->
+<!-- NAVIGATION -->
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="#hero" class="nav-logo">Mr. <span>Vic</span></a>
@@ -48,7 +48,7 @@
 
   <div class="hero-content">
     <div class="hero-status">
-      <img src="assets/pfp/vics-picture.png" alt="Victor R. Usen" class="hero-pfp">
+      <!-- <img src="assets/pfp/vics-picture.png" alt="Victor R. Usen" class="hero-pfp"> -->
       <div class="status-dot"></div>
       <span class="eyebrow">available to work</span>
     </div>
@@ -62,7 +62,7 @@
     <div class="hero-meta">
       <p class="hero-role">
         <strong>Frontend Developer</strong> — I build clean, scalable,<br>
-        and performant user interfaces with React &amp; modern web tools.
+        and performant websites with React &amp; some modern web tools.
       </p>
       <div class="hero-cta-group">
         <a href="#projects" class="btn btn-primary">
@@ -136,17 +136,17 @@
         <p class="about-body">
           I value maintainable code, solid fundamentals, and the kind of attention to craft that separates good interfaces from truly great ones. When I'm not building, I'm studying design systems and obsessing over typography.
         </p>
-        <div style="margin-top: 2rem;">
+        <!-- <div style="margin-top: 2rem;">
           <a href="#contact" class="btn btn-primary">Let's Work Together</a>
-        </div>
+        </div> -->
+      </div>
+
+      <div class="about-pfp-card reveal">
+        <img src="assets/pfp/vics-picture.png" alt="Victor R. Usen">
       </div>
 
       <div class="about-right">
-        <!-- <div class="about-pfp-card reveal">
-          <img src="assets/pfp/vics-picture.png" alt="Victor R. Usen">
-        </div> -->
-
-        <div class="about-card reveal reveal-delay-1">
+        <!-- <div class="about-card reveal reveal-delay-1">
           <div class="about-card-label">Core Values</div>
           <div class="values-grid">
             <div class="value-item">Clean UI</div>
@@ -156,7 +156,7 @@
             <div class="value-item">Scalability</div>
             <div class="value-item">User-First Thinking</div>
           </div>
-        </div>
+        </div> -->
 
         <div class="about-card reveal reveal-delay-2">
           <div class="about-card-label">Journey</div>
@@ -178,29 +178,29 @@
             <div class="timeline-item">
               <span class="timeline-year">2024</span>
               <div class="timeline-desc">
-                <strong>Began Web develoment</strong>
+                <strong>Started Web development</strong>
                 HTML & CSS
               </div>
             </div>
             <div class="timeline-item">
               <span class="timeline-year">2025</span>
               <div class="timeline-desc">
-                <strong>Progressed at Africinnovate</strong>
+                <strong>Joined Africinnovate</strong>
                 Learnt JavaScript/React/Tailwind, Typescript & Firebase
               </div>
             </div>
             <div class="timeline-item">
               <span class="timeline-year">2025</span>
               <div class="timeline-desc">
-                <strong>Taught Kids @Code Kamp</strong>
+                <strong>Coached Children at Kids-Code-Kamp</strong>
                 HTML/CSS
               </div>
             </div>
             <div class="timeline-item">
               <span class="timeline-year">2026</span>
               <div class="timeline-desc">
-                <strong>Taught Web Development</strong>
-                FullTime role
+                <strong>Teaching Web development</strong>
+                Fulltime 
               </div>
             </div>
           </div>
@@ -332,72 +332,8 @@
       </p>
     </div>
 
-    <div class="projects-grid">
-
-      <!-- Featured: Weather App -->
-      <a href="#" class="project-card featured reveal">
-        <div class="project-thumb">
-          <img src="assets/weather-app.png" alt="Interactive Weather Forecasting App Preview" loading="lazy" />
-        </div>
-        <div class="project-body">
-          <span class="project-index">01</span>
-          <h3 class="project-title">Interactive Weather Forecasting App</h3>
-          <p class="project-desc">A real-time weather dashboard fetching live data by city name. Features temperature, humidity, wind speed, and multi-day forecasts with a clean, readable UI.</p>
-          <div class="project-footer">
-            <div class="project-tags">
-              <span class="tag">JavaScript</span>
-              <span class="tag">OpenWeather API</span>
-              <span class="tag tag-cyan">Live</span>
-            </div>
-            <div class="project-arrow">
-              <svg viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-          </div>
-        </div>
-      </a>
-
-      <!-- Form Website -->
-      <a href="https://multi-step-js-form.pxxl.click/" target="_blank" class="project-card reveal reveal-delay-1">
-        <div class="project-thumb">
-          <img src="assets/multi-step-form.png" alt="Multi-Step Form Website Preview" loading="lazy" />
-        </div>
-        <div class="project-body">
-          <span class="project-index">02</span>
-          <h3 class="project-title">Full-Stack Form Website with Firebase</h3>
-          <p class="project-desc">Multi-step form application with real-time database storage, form validation, and user authentication built on Firebase.</p>
-          <div class="project-footer">
-            <div class="project-tags">
-              <span class="tag">JavaScript</span>
-              <span class="tag">Firebase</span>
-            </div>
-            <div class="project-arrow">
-              <svg viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-          </div>
-        </div>
-      </a>
-
-      <!-- Room Design App -->
-      <a href="https://room-master-app.pxxl.click/" target="_blank" class="project-card reveal reveal-delay-2">
-        <div class="project-thumb">
-          <img src="assets/room-app.png" alt="ROM App Preview" loading="lazy" />
-        </div>
-        <div class="project-body">
-          <span class="project-index">03</span>
-          <h3 class="project-title">Single Page Room Design App</h3>
-          <p class="project-desc">A React &amp; Tailwind single-page application showcasing innovative interior design concepts with smooth transitions and a polished UI.</p>
-          <div class="project-footer">
-            <div class="project-tags">
-              <span class="tag">React</span>
-              <span class="tag">Tailwind CSS</span>
-            </div>
-            <div class="project-arrow">
-              <svg viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-          </div>
-        </div>
-      </a>
-
+    <div class="projects-grid" id="projectsGrid">
+      <!-- Projects dynamically injected by portfolio.js -->
     </div>
 
     <div class="projects-more reveal">
@@ -414,8 +350,8 @@
 
 <!-- CONTACT -->
 <section class="section contact-section" id="contact">
-  <div class="container">
-    <div class="contact-layout">
+  <div class="container" >
+    <div class="contact-layout" >
 
       <div class="contact-left reveal">
         <span class="section-label">Get In Touch</span>
@@ -423,7 +359,7 @@
         <p class="body-lg">
           Have a project in mind, or just want to talk? I'm always open.
         </p>
-        <a href="mailto:usenvictor40@gmail.com?subject=Web development Inquiry" class="btn btn-primary" style="font-size: 0.9375rem; padding: 0.875rem 2rem;">
+        <a href="#" class="btn btn-primary js-open-modal" style="font-size: 0.9375rem; padding: 0.875rem 2rem;">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 4l6 5 6-5M2 4h12v8H2V4z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg>
           Send Me a Message
         </a>
@@ -444,7 +380,7 @@
       </div>
 
       <div class="contact-right reveal reveal-delay-2">
-        <a href="mailto:usenvictor40@gmail.com?subject=Web development Inquiry" class="contact-item contact-item-cta">
+        <a href="mailto:usenvictor40@gmail.com?subject=Web&body=I saw your website, and I'd like to..." class="contact-item">
           <div class="contact-item-left">
             <span class="contact-item-label">Email</span>
             <span class="contact-item-value">usenvictor40@gmail.com</span>
@@ -454,27 +390,27 @@
           </span>
         </a>
 
-        <a href="https://www.linkedin.com/in/victor-usen-81a5a63a4/" class="contact-item">
+        <a href="https://wa.me/qr/6UTN22Z45CWDL1" target="_blank" class="contact-item">
           <div class="contact-item-left">
-            <span class="contact-item-label">LinkedIn</span>
-            <span class="contact-item-value">https://www.linkedin.com/in/victor-usen-81a5a63a4/</span>
+            <span class="contact-item-label">whatsapp</span>
+            <span class="contact-item-value">(+234) 708 095 2597</span>
           </div>
           <span class="contact-item-arrow">
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9h10M9 4l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </span>
         </a>
 
-        <a href="https://github.com/victusen" class="contact-item">
+        <a href="https://www.facebook.com/profile.php?id=61562599393792" target="_blank" class="contact-item">
           <div class="contact-item-left">
-            <span class="contact-item-label">GitHub</span>
-            <span class="contact-item-value">github.com/victusen</span>
+            <span class="contact-item-label">facebook</span>
+            <span class="contact-item-value">Very Active</span>
           </div>
           <span class="contact-item-arrow">
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9h10M9 4l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </span>
         </a>
 
-        <a href="#" class="contact-item">
+        <a href="#" class="contact-item js-open-modal">
           <div class="contact-item-left">
             <span class="contact-item-label">Availability</span>
             <span class="contact-item-value">Open to freelance &amp; full-time</span>
@@ -500,7 +436,58 @@
   </div>
 </footer>
 
+<!-- CONTACT MODAL -->
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal-container" id="modalContainer" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close modal">✕</button>
+    
+    <div class="modal-content" id="modalContent">
+      <div class="modal-header">
+        <!-- <span class="modal-eyebrow">Get In Touch</span> -->
+        <h2 id="modalTitle" class="modal-title">Let's talk about you.</h2>
+        <p class="modal-subtext">Please state everything in the form. I'll get back soon.</p>
+      </div>
+
+      <form id="contactForm" class="modal-form">
+        <div class="form-group">
+          <input type="text" name="name" id="userName" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" id="userEmail" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <textarea name="message" id="userMessage" placeholder="What's your project?" rows="5" required></textarea>
+        </div>
+        
+        <div id="formError" class="form-error" style="display: none;">
+          Something went wrong. Try emailing me directly at <a href="mailto:usenvictor40@gmail.com">usenvictor40@gmail.com</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+          <span>Send Message</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="margin-left: 8px;">
+            <path d="M14 2L2 7.5L7 9L14 2Z" fill="currentColor"/>
+            <path d="M14 2L7 9L8.5 14L14 2Z" fill="currentColor"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <!-- Success State (Hidden by default) -->
+    <div class="modal-success" id="modalSuccess" style="display: none;">
+      <div class="success-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <h2 class="modal-title">Message sent.</h2>
+      <p class="modal-subtext">Thanks for writing me. I've received your mail.</p>
+    </div>
+  </div>
+</div>
+
 <!-- JAVASCRIPT -->
+<script src="config.js"></script>
 <script src="portfolio.js"></script>
 
 </body>
