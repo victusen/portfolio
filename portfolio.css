@@ -667,7 +667,7 @@ body::before {
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
-  padding: 2rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
   margin-bottom: 1rem;
 }
 
@@ -715,7 +715,7 @@ body::before {
 
 .timeline-item {
   display: grid;
-  grid-template-columns: 80px 1fr;
+  grid-template-columns: clamp(60px, 15vw, 80px) 1fr;
   gap: 1rem;
   align-items: baseline;
 }
@@ -1060,7 +1060,8 @@ body::before {
 
 .contact-socials {
   display: flex;
-  gap: 0.75rem;
+  flex-wrap: wrap;
+  gap: clamp(0.75rem, 3vw, 1.25rem);
   margin-top: 2rem;
   padding-top: 2rem;
   border-top: 1px solid var(--border-subtle);
@@ -1076,13 +1077,12 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 2rem;
+  padding: clamp(1.25rem, 3vw, 1.75rem) clamp(1.5rem, 4vw, 2rem);
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   text-decoration: none;
   transition: all 0.25s ease;
-  /* group: ''; */
 }
 
 .contact-item:hover {
@@ -1204,13 +1204,15 @@ footer {
 /* Scroll-triggered reveal */
 .reveal {
   opacity: 0;
-  transform: translateY(32px);
+  transform: translate3d(0, 32px, 0);
+  will-change: transform, opacity;
+  backface-visibility: hidden;
   transition: opacity 0.8s var(--ease-out-expo), transform 0.8s var(--ease-out-expo);
 }
 
 .reveal.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: translate3d(0, 0, 0);
 }
 
 .reveal-delay-1 {
@@ -1239,14 +1241,15 @@ footer {
   position: fixed;
   inset: 0;
   background: var(--bg-void);
-  z-index: 99;
+  z-index: 200;
+  /* Higher than .nav (100) */
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease;
+  transition: all 0.4s var(--ease-out-expo);
 }
 
 .mobile-menu.open {
@@ -1270,20 +1273,38 @@ footer {
 
 .mobile-close {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  background: none;
-  border: none;
-  color: var(--text-secondary);
+  top: 2rem;
+  right: clamp(1.5rem, 5vw, 3rem);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-mid);
+  color: var(--text-primary);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  padding: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+  z-index: 210;
+}
+
+.mobile-close:hover {
+  background: var(--cyan-dim);
+  color: var(--cyan);
+  border-color: var(--cyan);
 }
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
   .about-grid {
     grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-pfp-card {
+    display: none;
   }
 
   .skills-layout {
@@ -1292,6 +1313,7 @@ footer {
 
   .skills-intro {
     position: static;
+    margin-bottom: 2rem;
   }
 
   .projects-grid {
@@ -1304,7 +1326,9 @@ footer {
 
   .contact-layout {
     grid-template-columns: 1fr;
+    gap: 4rem;
   }
+
   .contact-right .contact-item-cta {
     display: none;
   }
@@ -1314,7 +1338,8 @@ footer {
   .about-pfp-card {
     display: none;
   }
-  .btn {
+
+  .nav-right .btn {
     display: none;
   }
 }
@@ -1349,6 +1374,8 @@ footer {
 
   .projects-grid {
     grid-template-columns: 1fr;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .project-card.featured {
@@ -1380,22 +1407,26 @@ footer {
   }
 }
 
-@media (max-width: 480px) {
-  .hero-name {
-    letter-spacing: -0.03em;
-  }
-
-  .hero-stats {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 0;
-  }
-
-  .stat-number {
-    font-size: 1.5rem;
-  }
-
-  .values-grid {
+@media (max-width: 680px) {
+  .timeline-item {
     grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
+  .timeline-year {
+    color: var(--cyan);
+    font-size: 0.7rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+    justify-content: center;
   }
 }
 

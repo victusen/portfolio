@@ -29,17 +29,26 @@ const mobileMenu = document.getElementById('mobileMenu');
 const mobileClose = document.getElementById('mobileClose');
 
 function openMobile() {
-	lenis.stop(); // Pause Lenis
+	if (typeof lenis !== 'undefined') lenis.stop();
 	mobileMenu.classList.add('open');
 	document.body.style.overflow = 'hidden';
 }
+
 function closeMobile() {
-	lenis.start(); // Resume Lenis
+	if (typeof lenis !== 'undefined') lenis.start();
 	mobileMenu.classList.remove('open');
 	document.body.style.overflow = '';
 }
 
-hamburger.addEventListener('click', openMobile);
+const toggleMobile = () => {
+    if (mobileMenu.classList.contains('open')) {
+        closeMobile();
+    } else {
+        openMobile();
+    }
+};
+
+hamburger.addEventListener('click', toggleMobile);
 mobileClose.addEventListener('click', closeMobile);
 
 // Scroll reveal
