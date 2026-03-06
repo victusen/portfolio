@@ -447,7 +447,7 @@ body::before {
 
 .hero-name {
   font-family: var(--font-display);
-  font-size: clamp(4rem, 12vw, 11rem);
+  font-size: clamp(4.5rem, 12vw, 10rem);
   font-weight: 800;
   line-height: 0.88;
   letter-spacing: -0.04em;
@@ -483,7 +483,7 @@ body::before {
 
 .hero-role {
   font-family: var(--font-body);
-  font-size: clamp(1rem, 2.5vw, 1.375rem);
+  font-size: clamp(1.05rem, 2.5vw, 1.375rem);
   font-weight: 300;
   color: var(--text-secondary);
   letter-spacing: 0.01em;
@@ -1408,6 +1408,9 @@ footer {
 }
 
 @media (max-width: 680px) {
+  .about-card-label {
+    font-size: 0.8rem;
+  }
   .timeline-item {
     grid-template-columns: 1fr;
     gap: 0.25rem;
@@ -1417,6 +1420,10 @@ footer {
     color: var(--cyan);
     font-size: 0.7rem;
     margin-bottom: 0.25rem;
+  }
+
+  .timeline-desc strong {
+    font-size: 1rem;
   }
 
   .hero-cta-group {
