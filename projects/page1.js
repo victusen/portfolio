@@ -61,7 +61,7 @@ const projects = [
     tags: ["JavaScript"],
     badge: "json API",
     year: 2024,
-    url: "https://victusen.github.io/Digital-bank/",
+    url: "https://extensions-app.pxxl.click/",
     thumb: "t-dash",
     image: "../assets/extensions-app1.png"
   },

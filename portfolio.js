@@ -138,7 +138,7 @@ const featuredProjects = [
     tags: ["JavaScript", "OpenWeather API"],
     badge: "Live",
     image: "assets/weather-app.png",
-    url: "#",
+    url: "https://weather-appplication.pxxl.click/",
     isFeatured: true
   },
   {
