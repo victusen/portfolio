@@ -110,6 +110,13 @@ function render() {
 
       <!-- Body — flex column -->
       <div class="card-body">
+        <span class="card-arrow">
+          <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+            <path d="M2.5 8.5l6-6M4 2.5h5v5"
+              stroke="currentColor" stroke-width="1.4"
+              stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
         <span class="card-index">${String(i + 1).padStart(2,'0')}</span>
         <span class="card-title">${p.title}</span>
         <p class="card-desc">${p.desc}</p>
@@ -120,13 +127,6 @@ function render() {
             ${p.tags.map(t => `<span class="tag">${t}</span>`).join('')}
             ${p.badge ? `<span class="tag tag-cyan">${p.badge}</span>` : ''}
           </div>
-          <span class="card-arrow">
-            <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
-              <path d="M1.5 5.5h8M5.5 1.5l4 4-4 4"
-                stroke="currentColor" stroke-width="1.4"
-                stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
         </div>
       </div>
 

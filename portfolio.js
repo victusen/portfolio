@@ -176,6 +176,9 @@ function renderProjects() {
         <img src="${project.image}" alt="${project.title} Preview" loading="lazy" />
       </div>
       <div class="project-body">
+        <div class="project-arrow">
+          <svg viewBox="0 0 14 14" fill="none"><path d="M3.5 10.5l7-7M5.5 3.5h5v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
         <span class="project-index">${project.index}</span>
         <h3 class="project-title">${project.title}</h3>
         <p class="project-desc">${project.desc}</p>
@@ -183,9 +186,6 @@ function renderProjects() {
           <div class="project-tags">
             ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
             ${project.badge ? `<span class="tag tag-cyan">${project.badge}</span>` : ''}
-          </div>
-          <div class="project-arrow">
-            <svg viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
         </div>
       </div>
