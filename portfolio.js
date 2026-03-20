@@ -162,6 +162,17 @@ const featuredProjects = [
     image: "assets/room-app.png",
     url: "https://room-master-app.pxxl.click/",
     isFeatured: false
+  },
+  {
+    id: 4,
+    index: "04",
+    title: "RayzFashionLuxuria brand",
+    desc: "Full website for fashioning including all works, carousels, enquiry form, modellings and more.",
+    tags: ["JavaScript"],
+    badge: "Emailjs",
+    image: "assets/rayzfashion.png",
+    url: "https://victusen.github.io/rayzfashion/",
+    isFeatured: false
   }
 ];
 

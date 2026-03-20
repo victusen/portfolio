@@ -61,7 +61,7 @@ const projects = [
     tags: ["JavaScript"],
     badge: "json API",
     year: 2024,
-    url: "https://extensions-app.pxxl.click/",
+    url: "https://victusen.github.io/extensions-app/",
     thumb: "t-dash",
     image: "../assets/extensions-app1.png"
   },
