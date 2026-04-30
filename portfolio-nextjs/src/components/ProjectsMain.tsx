@@ -1,4 +1,6 @@
 import Footer from "./Footer";
+import RenderedProjects from "./RenderedProjects"
+
 function ProjectsMain() {
     return (
         <>
@@ -10,7 +12,9 @@ function ProjectsMain() {
 
             {/* Padded grid area */}
             <div className="grid-wrap">
-                <div className="project-grid" id="projectGrid"></div>
+                <div className="project-grid" id="projectGrid">
+                    <RenderedProjects onlyFeatured={false} /> 
+                </div>
             </div>
 
             <Footer />

@@ -46,6 +46,17 @@ export default function TechStack() {
                             </div>
                         </div>
 
+                        {/* Git */}
+                        <div className="skill-card reveal reveal-delay-4">
+                            <div className="skill-icon-wrap">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path className="icon-git" d="M23.546 10.93L13.067.452a1.55 1.55 0 00-2.188 0L8.708 2.627l2.76 2.76a1.838 1.838 0 012.327 2.341l2.658 2.66a1.838 1.838 0 011.935 3.0 1.838 1.838 0 01-2.308-2.504l-2.484-2.481v6.53a1.836 1.836 0 01-.487 3.607 1.836 1.836 0 01-1.844-1.83 1.837 1.837 0 011.214-1.73V9.703a1.834 1.834 0 01-.996-2.404L8.698 4.617 2.380 10.976a1.549 1.549 0 000 2.187l10.48 10.478a1.55 1.55 0 002.186 0l10.48-10.48a1.55 1.55 0 000-2.23" /></svg>
+                            </div>
+                            <div>
+                                <div className="skill-name">Git</div>
+                                <div className="skill-level">Proficient</div>
+                            </div>
+                        </div>
+
                         {/* JavaScript */}
                         <div className="skill-card reveal reveal-delay-2">
                         <div className="skill-icon-wrap">
@@ -65,6 +76,64 @@ export default function TechStack() {
                             <div>
                                 <div className="skill-name">React</div>
                                 <div className="skill-level">Proficient</div>
+                            </div>
+                        </div>
+
+                        {/* Next.js */}
+                        {/* <div className="skill-card reveal reveal-delay-2">
+                            <div className="skill-icon-wrap">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path 
+                                        className="icon-nextjs" 
+                                        fill="currentColor"
+                                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 17l-5-6.25v6.25h-1.5v-9h1.25l5.25 6.5v-6.5h1.5v9h-1.5z" 
+                                    />
+                                </svg>
+                            </div>
+                            <div>
+                                <div className="skill-name">Next.js</div>
+                                <div className="skill-level">Advanced</div>
+                            </div>
+                        </div> */}
+
+                        {/* Next.js */}
+                        <div className="skill-card reveal reveal-delay-2">
+                            <div className="skill-icon-wrap">
+                                <svg 
+                                    // 1. Adjusted ViewBox to reduce internal padding and make the icon 'taller'
+                                    viewBox="10 10 160 160" 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <defs>
+                                        <linearGradient
+                                            id="nextjs-gradient"
+                                            gradientUnits="userSpaceOnUse"
+                                            x1="103"
+                                            y1="103"
+                                            x2="144"
+                                            y2="144"
+                                        >
+                                            <stop stopColor="white" />
+                                            <stop offset="1" stopColor="white" stopOpacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                    {/* The Circle Background - Now fills almost the entire ViewBox */}
+                                    {/* <circle cx="90" cy="90" r="90" fill="black" /> */}
+                                    
+                                    {/* The "N" Paths (Preserved, just sitting on a bigger stage) */}
+                                    <path
+                                        d="M149.508 157.52L69.142 54H54V125.97H66.1136V69.3836L139.999 164.845C143.333 162.614 146.509 160.165 149.508 157.52Z"
+                                        fill="url(#nextjs-gradient)"
+                                    />
+                                    <path
+                                        d="M115.893 54H128V125.97H115.893V54Z"
+                                        fill="white"
+                                    />
+                                </svg>
+                            </div>
+                            <div>
+                                <div className="skill-name">Next.js</div>
+                                <div className="skill-level">Advanced</div>
                             </div>
                         </div>
 
@@ -88,17 +157,6 @@ export default function TechStack() {
                                 <div className="skill-name">Firebase</div>
                                 <div className="skill-level">Intermediate</div>
                             </div>
-                        </div>
-
-                        {/* Git */}
-                        <div className="skill-card reveal reveal-delay-4">
-                            <div className="skill-icon-wrap">
-                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path className="icon-git" d="M23.546 10.93L13.067.452a1.55 1.55 0 00-2.188 0L8.708 2.627l2.76 2.76a1.838 1.838 0 012.327 2.341l2.658 2.66a1.838 1.838 0 011.935 3.0 1.838 1.838 0 01-2.308-2.504l-2.484-2.481v6.53a1.836 1.836 0 01-.487 3.607 1.836 1.836 0 01-1.844-1.83 1.837 1.837 0 011.214-1.73V9.703a1.834 1.834 0 01-.996-2.404L8.698 4.617 2.380 10.976a1.549 1.549 0 000 2.187l10.48 10.478a1.55 1.55 0 002.186 0l10.48-10.48a1.55 1.55 0 000-2.23" /></svg>
-                            </div>
-                            <div>
-                                <div className="skill-name">Git</div>
-                                <div className="skill-level">Proficient</div>
-                        </div>
                         </div>  
                     </div>
                 </div>

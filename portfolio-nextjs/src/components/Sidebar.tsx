@@ -7,10 +7,10 @@ function Sidebar() {
                 <Link href="/" className="sidebar-logo">Mr.<span>Vic</span></Link>
 
                 <ul className="sidebar-nav">
-                    <li><Link href="/index#about">About</Link></li>
-                    <li><Link href="/index#skills">Skills</Link></li>
-                    <li><Link href="/index#projects" className="active">Projects</Link></li>
-                    <li><Link href="/index#contact">Contact</Link></li>
+                    <li><Link href="/#about">About</Link></li>
+                    <li><Link href="/#skills">Skills</Link></li>
+                    <li><Link href="/#projects" className="active">Projects</Link></li>
+                    <li><Link href="/#contact">Contact</Link></li>
                 </ul>
 
                 <div className="sidebar-spacer"></div>

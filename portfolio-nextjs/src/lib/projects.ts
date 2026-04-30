@@ -64,19 +64,6 @@ export const allProjects: Project[] = [
   {
     id: 5,
     index: "05",
-    title: "SmartIndex",
-    desc: "The economies masterpiece in build. Making Africa & economy better/more stable, and accessible to all.",
-    tags: ["JavaScript", "Tailwind CSS", "React"],
-    badge: null,
-    url: "https://smartindex.pxxl.click",
-    // thumb: "t-css",
-    image: "/assets/smartindex.png",
-    isFeatured: false,
-    onlyFeatured: false
-  },
-  {
-    id: 6,
-    index: "06",
     title: "First portfolio",
     desc: "This portfolio designed by me was built from scratch. Many react features were used, lenis scroll, typewriter effect etc",
     tags: ["React", "Tailwind CSS", "Typescript"],
@@ -89,8 +76,8 @@ export const allProjects: Project[] = [
     onlyFeatured: false
   },
   {
-    id: 7,
-    index: "07",
+    id: 6,
+    index: "06",
     title: "async API fetching extensions app",
     desc: "This project required fetching API and updating Inactive/active extensions status.",
     tags: ["JavaScript"],
@@ -99,6 +86,19 @@ export const allProjects: Project[] = [
     url: "https://victusen.github.io/extensions-app/",
     // thumb: "t-dash",
     image: "/assets/extensions-app1.png",
+    isFeatured: false,
+    onlyFeatured: false
+  },
+  {
+    id: 7,
+    index: "07",
+    title: "SmartIndex",
+    desc: "The economies masterpiece in build. Making Africa & economy better/more stable, and accessible to all.",
+    tags: ["JavaScript", "Tailwind CSS", "React"],
+    badge: null,
+    url: "https://smartindex.pxxl.click",
+    // thumb: "t-css",
+    image: "/assets/smartindex.png",
     isFeatured: false,
     onlyFeatured: false
   },
@@ -116,6 +116,7 @@ export const allProjects: Project[] = [
     isFeatured: false,
     onlyFeatured: false
   },
+  
   
   // {
   //   id: 8,
