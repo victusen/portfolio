@@ -1,5 +1,5 @@
 import Image from "next/image";
-import pfp from "../../public/assets/pfp/vics-picture.png";
+import pfp from "../../public/assets/pfp/victor.png";
 
 export default function About() {
     return (
@@ -17,7 +17,7 @@ export default function About() {
                         </div>
 
                         <div className="about-pfp-card reveal">
-                            <Image src={ pfp } alt="Victor R. Usen" loading="eager" decoding="async" width={1080} height={1080} className="rounded-lg" />
+                            <Image src={ pfp } alt="Victor R. Usen" loading="eager" decoding="async" style={{objectFit: "cover", objectPosition: "0% 70%"}} width={1080} height={1080} className="rounded-lg" />
                         </div>
 
                         <div className="about-right">

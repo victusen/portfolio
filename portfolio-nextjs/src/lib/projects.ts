@@ -22,7 +22,7 @@ export const allProjects: Project[] = [
     badge: "Live",
     image: "/assets/weather-app.png",
     url: "https://weather-appplication.pxxl.click/",
-    isFeatured: true,
+    isFeatured: false,
     onlyFeatured: true
   },
   {
