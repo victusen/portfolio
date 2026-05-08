@@ -4,7 +4,7 @@ function Sidebar() {
     return (
         <>
             <aside className="sidebar">
-                <Link href="/" className="sidebar-logo">Mr.<span>Vic</span></Link>
+                <Link href="/" className="sidebar-logo">Mr.<span> Vic</span></Link>
 
                 <ul className="sidebar-nav">
                     <li><Link href="/#about">About</Link></li>

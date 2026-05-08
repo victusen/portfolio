@@ -64,7 +64,7 @@ export const allProjects: Project[] = [
   {
     id: 5,
     index: "05",
-    title: "First portfolio",
+    title: "Portfolio",
     desc: "This portfolio designed by me was built from scratch. Many react features were used, lenis scroll, typewriter effect etc",
     tags: ["React", "Tailwind CSS", "Typescript"],
     badge: null,
@@ -78,8 +78,8 @@ export const allProjects: Project[] = [
   {
     id: 6,
     index: "06",
-    title: "async API fetching extensions app",
-    desc: "This project required fetching API and updating Inactive/active extensions status.",
+    title: "Extensions Admin Panel",
+    desc: "Admin dashboard for managing extensions, fetching API and updating inactive/active extensions status.",
     tags: ["JavaScript"],
     badge: "json API",
     // year: 2024,
@@ -105,7 +105,7 @@ export const allProjects: Project[] = [
   {
     id: 8,
     index: "08",
-    title: "E-Banking app landing page",
+    title: "E-Bank (Digital bank)",
     desc: "E-banking app's full landing page, where users can find out and read more about features and services.",
     tags: ["HTML", "CSS", "JavaScript"],
     badge: null,
@@ -115,19 +115,5 @@ export const allProjects: Project[] = [
     image: "/assets/digital-bank.png",
     isFeatured: false,
     onlyFeatured: false
-  },
-  
-  
-  // {
-  //   id: 8,
-  //   title: "E-Banking app landing page",
-  //   desc: "The full landing page of an e-banking app, where users can find out and learn more about the app.",
-  //   tags: ["HTML", "CSS", "JavaScript"],
-  //   badge: null,
-  //   year: 2024,
-  //   url: "#",
-  //   thumb: "t-blog",
-  //   image: "../assets/digital-bank1.png"
-  // },
-
+  }
 ];

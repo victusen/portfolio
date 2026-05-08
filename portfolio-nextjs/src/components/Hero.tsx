@@ -1,4 +1,5 @@
-
+import Image from "next/image";
+import vicsPhoto from "../../public/assets/pfp/vics-photo.png";
 
 function Hero() {
 
@@ -10,7 +11,7 @@ function Hero() {
 
         <div className="hero-content">
           <div className="hero-status">
-          {/* <img src="assets/pfp/vics-picture.png" alt="Victor R. Usen" class="hero-pfp">  */}
+          <Image src={vicsPhoto} alt="Victor R. Usen" className="hero-pfp" width={128} height={128} loading="eager" />
           {/* <div className="status-dot"></div> */}
           <span className="eyebrow">available to work</span>
           </div>
