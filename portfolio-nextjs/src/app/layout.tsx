@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { Syne, DM_Sans } from "next/font/google";
 import "./globals.css";
+import SmoothScroll from "../components/SmoothScroll";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -63,7 +64,11 @@ export default function RootLayout({
             gtag('config', 'G-3316G9D8YB');
           `}
         </Script>
-        {children}</body>
+
+        <SmoothScroll>
+          {children}
+        </SmoothScroll>
+      </body>
     </html>
   );
 }
