@@ -1,5 +1,5 @@
 import ContactModal from "./ContactModal";
-import FormSection from "./FormSection";  
+// import FormSection from "./FormSection";  
     
 export default function Contact() {
 

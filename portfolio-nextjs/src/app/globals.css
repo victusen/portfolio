@@ -1291,8 +1291,8 @@ footer {
 
 .mobile-close {
   position: absolute;
-  top: 2rem;
-  right: clamp(1.5rem, 5vw, 3rem);
+  top: 1rem;
+  right: 2rem;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--border-mid);
   color: var(--text-primary);

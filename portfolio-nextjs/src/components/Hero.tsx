@@ -11,7 +11,7 @@ function Hero() {
 
         <div className="hero-content">
           <div className="hero-status">
-          <Image src={vicsPhoto} alt="Victor R. Usen" className="hero-pfp" width={128} height={128} loading="eager" />
+          {/* <Image src={vicsPhoto} alt="Victor R. Usen" className="hero-pfp" width={128} height={128} loading="eager" /> */}
           {/* <div className="status-dot"></div> */}
           <span className="eyebrow">available to work</span>
           </div>

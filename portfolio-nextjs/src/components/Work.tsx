@@ -21,7 +21,7 @@ export default function Work() {
                 <div className="projects-more reveal">
                 <div className="hairline"></div>
                 <a href="/work" className="btn btn-ghost">
-                    See All Projects
+                    View All Projects
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3.5 10.5l7-7M5.5 3.5h5v5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 </a>
                 <div className="hairline"></div>
