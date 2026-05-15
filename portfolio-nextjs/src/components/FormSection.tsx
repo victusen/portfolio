@@ -24,7 +24,7 @@ export default function FormSection() {
     const handleSubmit = async (e:React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setSubmitting(true);
-        console.log("Form is submitting...");
+        // console.log("Form is submitting...");
 
         await emailjs.send(
             config.EMAILJS_SERVICE_ID,
@@ -95,4 +95,4 @@ function FormSuccess() {
             <p className="modal-subtext">Thanks for writing. I've gotten your message and will get back shortly.</p>
         </div>
     );
-}
+};

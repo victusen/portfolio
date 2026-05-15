@@ -3,7 +3,7 @@ export interface Project {
   id: number;
   index: string;
   title: string;
-  desc: string;
+  // desc: string;
   tags: string[];
   badge: string | null;
   image: string;
@@ -16,8 +16,8 @@ export const allProjects: Project[] = [
   {
     id: 1,
     index: "01",
-    title: "Interactive Weather Forecasting App",
-    desc: "A real-time weather dashboard fetching live data by city name. Features temperature, humidity, wind speed, and multi-day forecasts with a clean, readable UI.",
+    title: "Weather Forecast App",
+    // desc: "A real-time weather dashboard fetching live data by city name. Features temperature, humidity, wind speed, and multi-day forecasts with a clean, readable UI.",
     tags: ["JavaScript", "OpenWeather API"],
     badge: "Live",
     image: "/assets/weather-app.png",
@@ -26,34 +26,10 @@ export const allProjects: Project[] = [
     onlyFeatured: true
   },
   {
-    id: 2,
-    index: "02",
-    title: "Full-Stack Form Website with Firebase",
-    desc: "Multi-step form application with real-time database storage, form validation, and user authentication built on Firebase.",
-    tags: ["JavaScript", "Firebase"],
-    badge: null,
-    image: "/assets/multi-step-form.png",
-    url: "https://multi-step-js-form.pxxl.click/",
-    isFeatured: false,
-    onlyFeatured: true
-  },
-  {
-    id: 3,
-    index: "03",
-    title: "Single Page Room Design App",
-    desc: "A React & Tailwind single-page application showcasing innovative interior design concepts with smooth transitions and a polished UI.",
-    tags: ["React", "Tailwind CSS"],
-    badge: null,
-    image: "/assets/room-app.png",
-    url: "https://room-master-app.pxxl.click/",
-    isFeatured: false,
-    onlyFeatured: true
-  },
-  {
     id: 4,
     index: "04",
-    title: "RayzFashionLuxuria brand",
-    desc: "Full website for fashioning including all works, carousels, enquiry form, modellings and more.",
+    title: "Rayz Fashion Luxuria.com",
+    // desc: "Full website for fashioning including all works, carousels, enquiry form, modellings and more.",
     tags: ["JavaScript"],
     badge: "Emailjs",
     image: "/assets/rayzfashion.png",
@@ -62,10 +38,34 @@ export const allProjects: Project[] = [
     onlyFeatured: true
   },
   {
+    id: 2,
+    index: "02",
+    title: "Fullstack Form: with firebase",
+    // desc: "Multi-step form application with real-time database storage, form validation, and user authentication built on Firebase.",
+    tags: ["JavaScript", "Firebase"],
+    badge: null,
+    image: "/assets/multi-step-form.png",
+    url: "https://victusen.github.io/Multi-Step-js-form/",
+    isFeatured: false,
+    onlyFeatured: true
+  },
+  {
+    id: 3,
+    index: "03",
+    title: "Room.com",
+    // desc: "A React & Tailwind single-page application showcasing innovative interior design concepts with smooth transitions and a polished UI.",
+    tags: ["React", "Tailwind CSS"],
+    badge: null,
+    image: "/assets/room-app.png",
+    url: "https://room-master-app.pxxl.click/",
+    isFeatured: false,
+    onlyFeatured: true
+  },
+  {
     id: 5,
     index: "05",
     title: "Portfolio",
-    desc: "This portfolio designed by me was built from scratch. Many react features were used, lenis scroll, typewriter effect etc",
+    // desc: "This portfolio designed by me was built from scratch. Many react features were used, lenis scroll, typewriter effect etc",
     tags: ["React", "Tailwind CSS", "Typescript"],
     badge: null,
     // year: 2025,
@@ -78,8 +78,8 @@ export const allProjects: Project[] = [
   {
     id: 6,
     index: "06",
-    title: "Extensions Admin Panel",
-    desc: "Admin dashboard for managing extensions, fetching API and updating inactive/active extensions status.",
+    title: "Extensions panel",
+    // desc: "Admin dashboard for managing extensions, fetching API and updating inactive/active extensions status.",
     tags: ["JavaScript"],
     badge: "json API",
     // year: 2024,
@@ -93,7 +93,7 @@ export const allProjects: Project[] = [
     id: 7,
     index: "07",
     title: "SmartIndex",
-    desc: "The economies masterpiece in build. Making Africa & economy better/more stable, and accessible to all.",
+    // desc: "The economies masterpiece in build. Making Africa & economy better/more stable, and accessible to all.",
     tags: ["JavaScript", "Tailwind CSS", "React"],
     badge: null,
     url: "https://smartindex.pxxl.click",
@@ -105,8 +105,8 @@ export const allProjects: Project[] = [
   {
     id: 8,
     index: "08",
-    title: "E-Bank (Digital bank)",
-    desc: "E-banking app's full landing page, where users can find out and read more about features and services.",
+    title: "Digital bank (e-bank)",
+    // desc: "E-banking app's full landing page, where users can find out and read more about features and services.",
     tags: ["HTML", "CSS", "JavaScript"],
     badge: null,
     // year: 2024,

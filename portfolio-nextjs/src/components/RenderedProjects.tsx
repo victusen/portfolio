@@ -24,9 +24,9 @@ export default function RenderedProjects({onlyFeatured }: {onlyFeatured: boolean
                             <Image
                                 src={project.image}
                                 alt={ project.title + 'Preview'}
-                                loading="lazy" 
-                                width={500} 
-                                height={500} 
+                                loading="lazy"
+                                width={500}
+                                height={500}
                             />
                         </div>
                         <div className="project-body">
@@ -34,8 +34,8 @@ export default function RenderedProjects({onlyFeatured }: {onlyFeatured: boolean
                                 <svg viewBox="0 0 14 14" fill="none"><path d="M3.5 10.5l7-7M5.5 3.5h5v5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                             </div>
                             <span className="project-index">{ project.index }</span>
-                            <h3 className="project-title">{ project.title }</h3>
-                            <p className="project-desc">{ project.desc }</p>
+                            <h3 className="project-title">{ project.title.toUpperCase() }</h3>
+                            {/* <p className="project-desc">{ project.desc }</p> */}
                             <div className="project-footer">
                                 <div className="project-tags">
                                     { project.tags.map((tag: string, idx: number) => <span className="tag"key={idx}>{tag}</span>) }

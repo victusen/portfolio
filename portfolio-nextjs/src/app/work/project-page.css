@@ -157,6 +157,15 @@ body::after {
   flex-direction: column;
 }
 
+/* Override global footer for work route */
+.main footer {
+  max-width: none !important;
+  margin: 0 !important;
+  width: 100% !important;
+  border-top: 1px solid var(--border-subtle);
+  padding: 1.5rem 2.5rem !important;
+}
+
 /* Topbar */
 .topbar {
   position: sticky;

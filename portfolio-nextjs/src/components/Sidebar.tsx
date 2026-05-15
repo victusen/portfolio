@@ -10,6 +10,7 @@ function Sidebar() {
                     <li><Link href="/#about">About</Link></li>
                     <li><Link href="/#skills">Skills</Link></li>
                     <li><Link href="/#projects" className="active">Projects</Link></li>
+                    <li><Link href="/work/journal">Journal</Link></li>
                     <li><Link href="/#contact">Contact</Link></li>
                 </ul>
 

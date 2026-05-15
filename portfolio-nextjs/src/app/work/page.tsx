@@ -1,6 +1,7 @@
 import Sidebar from "../../components/Sidebar";
 import ProjectsMain from "../../components/ProjectsMain";
 import "./project-page.css";
+import "./projects.css"; // Added for paco-inspired card styles
 import "../globals.css";
 
 function ProjectsPage() {
@@ -9,7 +10,7 @@ function ProjectsPage() {
             <Sidebar />
             <div className="main">
                 <ProjectsMain />
-            </div> 
+            </div>
         </main>
     );
 }
