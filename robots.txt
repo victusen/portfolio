@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://victusen.github.io/portfolio/sitemap.xml
