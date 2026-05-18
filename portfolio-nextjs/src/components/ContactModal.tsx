@@ -57,7 +57,7 @@ export default function ContactModal() {
                     }}
                     // onWheel={handleScrollLock}
                     // onTouchMove={handleScrollLock}
-                    {...(!modal ? { inert: "" } : {})}
+                    inert={!modal ? true : undefined}
                 >
                     <div className="modal-container" id="modalContainer" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
                         <button onClick={() => {toggle();}} className="modal-close" id="modalClose" aria-label="Close modal">✕</button>
