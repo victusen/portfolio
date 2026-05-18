@@ -41,7 +41,9 @@ export const metadata: Metadata = {
     images: ['https://victorusen.netlify.app/assets/pfp/vics-picture.png'],
   },
   robots: 'index, follow',
-  // canonical: 'https://victorusen.netlify.app',
+  alternates: {
+    canonical: 'https://victorusen.netlify.app',
+  },
 };
 
 export default function RootLayout({
