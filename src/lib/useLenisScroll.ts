@@ -16,7 +16,7 @@ function useLenisScroll() {
         };
     };
 
-    return scrollToElement
+    return scrollToElement;
 };
 
-export default useLenisScroll
+export default useLenisScroll;

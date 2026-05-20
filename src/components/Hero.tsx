@@ -1,8 +1,17 @@
-import Image from "next/image";
-import vicsPhoto from "../../public/assets/pfp/vics-photo.png";
+// import Image from "next/image";
+// import vicsPhoto from "../../public/assets/pfp/vics-photo.png";
+"use client";
+import Link from "next/link";
+import useLenisScroll from "../lib/useLenisScroll";
+import React from "react";
 
 function Hero() {
+  const scrollToElement = useLenisScroll();
 
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    scrollToElement(id);
+  }
   return (
     <>
       <section className="hero" id="hero">
@@ -11,7 +20,6 @@ function Hero() {
 
         <div className="hero-content">
           <div className="hero-status">
-          {/* <Image src={vicsPhoto} alt="Victor R. Usen" className="hero-pfp" width={128} height={128} loading="eager" /> */}
           {/* <div className="status-dot"></div> */}
           <span className="eyebrow">available to work</span>
           </div>
@@ -28,11 +36,23 @@ function Hero() {
             and performant websites with React &amp; some modern web tools.
           </p>
           <div className="hero-cta-group">
-            <a href="#projects" className="btn btn-primary">
-            View My Work
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3.5 10.5l7-7M5.5 3.5h5v5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            </a>
-            <a href="#contact" className="btn btn-ghost">Say Hello</a>
+            <Link 
+              href="/#projects" 
+              className="btn btn-primary"
+              onClick={(e) => handleLinkClick(e, "projects")}
+            >
+              View My Work
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M3.5 10.5l7-7M5.5 3.5h5v5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </Link>
+            <Link 
+              href="/#contact" 
+              className="btn btn-ghost"
+              onClick={(e) => handleLinkClick(e, "contact")}
+            >
+            Say Hello
+            </Link>
           </div>
           </div>
 
@@ -61,4 +81,4 @@ function Hero() {
   )
 }
 
-export default Hero
+export default Hero;
